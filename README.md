@@ -2,11 +2,14 @@
 
 Vue 3, Vite, TypeScript, SCSS
 
-## Installation:
+## Install package
 
 ```sh
-git clone https://github.com/uchindev/zingmp3-fe-ts.git
-cd zingmp3-fe-ts
 yarn
+```
+
+## Run
+
+```sh
 yarn dev
 ```
