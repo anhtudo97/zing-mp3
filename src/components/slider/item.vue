@@ -1,5 +1,5 @@
 <script lang="ts">
-import { computed } from 'node_modules/vue/dist/vue'
+import { computed } from 'vue'
 export default {
   props: {
     slider: {

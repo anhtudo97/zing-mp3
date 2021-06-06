@@ -1,36 +1,36 @@
 import request from '@/helpers/request'
 
-export const fetchPlaylist = (id: string) => {
+export function fetchPlaylist(id: string) {
   return request({
-    url: `/playlist/getDetail?id=${id}`,
+    url: '/playlist/getDetail?id=' + id,
   })
 }
 
-export const fetchStreaming = (id: string) => {
+export function fetchStreaming(id: string) {
   return request({
-    url: `/song/getStreaming?id=${id}`,
+    url: '/song/getStreaming?id=' + id,
   })
 }
 
-export const fetchHome = (page: number = 1) => {
+export function fetchHome(page = 1) {
   return request({
-    url: `/home?page=${page}`,
+    url: '/home?page=' + page,
   })
 }
 
-export const fetchSong = (id: string) => {
+export function fetchSong(id: string) {
   return request({
-    url: `/sone/getDetail?id=${id}`,
+    url: '/song/getDetail?id=' + id,
   })
 }
 
-export const fetchKaraokeLyric = (id: string) => {
+export function fetchKaraokeLyric(id: string) {
   return request({
-    url: `/lyric?id=${id}`,
+    url: '/lyric?id=' + id,
   })
 }
 
-export const fetchLyric = (link: string) => {
+export function fetchLyric(link: string) {
   return request({
     url: link,
   })
